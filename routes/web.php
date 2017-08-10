@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'Controller@getClan');
+
+Route::get('player/{id}', 'Controller@getPlayer')->name('id');
