@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', 'Controller@getClan');
-
-Route::get('player/{id}', 'Controller@getPlayer')->name('id');
+Route::get('/', function(){ 
+    return view('homepage/replay'); 
+});
+Route::get('/clans','Controller@getClans');
+Route::get('/clan/{clanID}', 'Controller@getClan')->name('clanID');
+Route::get('/clan/{clanID}/warlog', 'Controller@getClanWarLog')->name('clanID');
+Route::get('/clan/{clanID}/currentwar', 'Controller@getClanCurrentWar')->name('clanID');
+Route::get('/player/{playerID}', 'Controller@getPlayer')->name('playerID');
