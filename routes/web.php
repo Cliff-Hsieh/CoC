@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function(){ 
-    return view('homepage/replay'); 
+    $videos = DB::table('replay')->get();
+    return view('homepage/replay', ['videos' => $videos]);
 });
 Route::get('/clans','Controller@getClans');
 Route::get('/clan/{clanID}', 'Controller@getClan')->name('clanID');

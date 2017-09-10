@@ -9,18 +9,17 @@
         </div>
     </div>
     <div class="row">
+    @for ($i = 0; $i < count($videos); $i++)
         <div class="col-md-3">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube.com/embed/s0S6ZzbimYM" frameborder="0" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" width="640" height="360" src="{{ $videos[$i]->website }}" frameborder="0" allowfullscreen></iframe>
             </div>
-           <span class="text-center">表哥狗球流1</span>
+            <span class="text-center">{{ $videos[$i]->name }}</span>
         </div>
-        <div class="col-md-3">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube.com/embed/KqRKMrMUIyY" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <span class="text-center">表哥狗球流2</span>
-        </div>
+        @if ($i % 4 == 3)
+            </div><div class='row'>
+        @endif        
+    @endfor
     </div>
 </div>
 <div id='add_new_replay' class="container">
