@@ -15,8 +15,8 @@ Route::get('/', function(){
     $videos = DB::table('replay')->get();
     return view('homepage/replay', ['videos' => $videos]);
 });
-Route::get('/clans','Controller@getClans');
-Route::get('/clan/{clanID}', 'Controller@getClan')->name('clanID');
-Route::get('/clan/{clanID}/warlog', 'Controller@getClanWarLog')->name('clanID');
-Route::get('/clan/{clanID}/currentwar', 'Controller@getClanCurrentWar')->name('clanID');
-Route::get('/player/{playerID}', 'Controller@getPlayer')->name('playerID');
+Route::get('/clans','DataController@getClans');
+Route::get('/clan/{clanID}', 'DataController@getClan')->name('clanID');
+Route::get('/clan/{clanID}/warlog', 'DataController@getClanWarLog')->name('clanID');
+Route::get('/clan/{clanID}/currentwar', 'DataController@getClanCurrentWar')->name('clanID');
+Route::get('/player/{playerID}', 'DataController@getPlayer')->name('playerID');
