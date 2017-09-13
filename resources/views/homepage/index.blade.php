@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://alvarotrigo.com/fullPage/jquery.fullpage.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -30,29 +30,8 @@
         <img src="{{ URL::to('/') }}/img/image2.jpg" />
         <div id="query"><a href="{{ URL::to('/clans') }}">Get Clash of Clans Data</a></div>
     </div>
-    <div class="section"><img src="https://downloads.andyroid.net/website/v2//wp-content/uploads/2014/12/clash.png"></div>
-    <div class="section"><img src="http://loyalknights.com/wp-content/uploads/2014/10/CoC_titlescreen_2013.jpg"></div>
     <div class="section">
-        <div class="container">
-            <span><h2 class="text-center text-primary">Replay</h2></span>
-            @yield('replay')
-            <div class="container-fluid">
-                <div class="row">
-                     <div class="col-md-3">
-                         <div class="embed-responsive embed-responsive-16by9">
-                             <iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube.com/embed/s0S6ZzbimYM" frameborder="0" allowfullscreen></iframe>
-                         </div>
-                         <span class="text-center">表哥狗球流1</span>
-                     </div>
-                     <div class="col-md-3">
-                         <div class="embed-responsive embed-responsive-16by9"> 
-                              <iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube.com/embed/KqRKMrMUIyY" frameborder="0" allowfullscreen></iframe>
-                         </div>
-                         <span class="text-center">表哥狗球流2</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @yield('replay')
     </div>
 </div>
 </body>
@@ -65,12 +44,13 @@
 
   ga('create', 'UA-104180492-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 <!-- GA end -->
+<!-- Fullpage js-->
 <script>
 $(document).ready(function() {
   $('#fullpage').fullpage();
 });
 </script>
+<!-- Fullpage JS end -->
 </html>
