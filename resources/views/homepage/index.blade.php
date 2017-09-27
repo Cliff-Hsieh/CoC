@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="clash of clans data station">
+    <meta name="keywords" content="clash of clans, replay">
+    <title>Clash of clans data station</title>
+    <link rel="icon" href="http://clash-wiki.com/images/army/barbarian/barbarian_level1.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://alvarotrigo.com/fullPage/jquery.fullpage.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
